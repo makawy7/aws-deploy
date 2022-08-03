@@ -13,8 +13,8 @@
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
     "ebinit": "eb init --region us-east-1 --platform Node.js14 udagram-api",
-    "deploy": "npm run build && eb list && eb use udagram && eb deploy",
-    "build": "npm install . && npm run clean && npm run ebinit && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
+    "deploy": "npm run ebinit && npm run build && eb list && eb use udagram && eb deploy",
+    "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp -R .elasticbeanstalk www/.elasticbeanstalk && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
