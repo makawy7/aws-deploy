@@ -1,7 +1,7 @@
 # Hosting a Full-Stack Application
 
 ## Documentation
-Visit documentation section [HERE](https://raw.githubusercontent.com/makawy7/aws-deploy/master/docs/).
+Visit documentation section [HERE](https://github.com/makawy7/aws-deploy/tree/master/docs).
 
 ## Application URL
 
